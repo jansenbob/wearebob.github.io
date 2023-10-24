@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sansec eComScan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen bg-slate-100">
+
+    <main class="max-w-6xl flex flex-col lg:flex-row mx-auto py-6 px-4 gap-8"> <!-- main container-->
+
+        <div class="flex flex-col lg:w-1/2 gap-6"> <!-- left cell -->
+
+            <div class="flex flex-col bg-white w-full p-6  gap-4 rounded-md shadow-md">
+
+                <h3 class="text-sm uppercase font-bold text-gray-500 tracking-widest mb-1">compatibility check</h3>
+
+                <div class="w-full flex flex-row items-center gap-4 border-l-4 border-green-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono rounded-sm">
+                    
+                    <img class="m-1" src="img/magento_icon.svg" alt="Magento Icon">
+                    <div class="text-sm">Found Magento 2 at</br>
+                        /data/web/magento2
+                    </div>
+                
+                </div>
+
+                <div class="w-full text-sm border border-solid border-slate-200 text-slate-600 py-3 px-4  rounded-md">A compatible store application was found.</div>
+
+            </div>
+
+            <div class="flex flex-col bg-white w-full p-6  gap-4 rounded-md shadow-md">
+
+                <h3 class="text-sm uppercase font-bold text-gray-500 tracking-widest mb-1">extended file system scan</h3>
+
+                <div class="w-full text-md bg-red-50 text-red-500 font-bold py-3 px-4 font-mono rounded-md">3 malware signatures identified</div>
+
+                <div class="w-full border-l-4 border-red-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono text-sm rounded-r-md overflow-hidden">
+                    <div class="grid grid-cols-[120px_auto]">
+                        <div>signature:</div>
+                        <div class="font-bold">form_grabber_with_jsencrypter_ea9bc</div>
+                        <div>in file:</div>
+                        <div>/data/web/magento2/js/mage/require.js</div>
+                        <div>triggered by:</div>
+                        <div>JSEncrypt();_0x</div>
+                        <div>created:</div>
+                        <div>2020-03-12 20:56:23</div>
+                        <div>modified:</div>
+                        <div>2020-03-31 21:59:31</div>
+                    </div>
+                </div>
+
+                <div class="w-full border-l-4 border-red-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono text-sm rounded-r-md overflow-hidden">
+                    <div class="grid grid-cols-[120px_auto]">
+                        <div>signature:</div>
+                        <div class="font-bold">form_grabber_with_jsencrypter_ea9bc</div>
+                        <div>in file:</div>
+                        <div>/data/web/magento2/js/mage/require.js</div>
+                        <div>triggered by:</div>
+                        <div>JSEncrypt();_0x</div>
+                        <div>created:</div>
+                        <div>2020-03-12 20:56:23</div>
+                        <div>modified:</div>
+                        <div>2020-03-31 21:59:31</div>
+                    </div>
+                </div>
+
+                <div class="w-full border-l-4 border-red-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono text-sm rounded-r-md overflow-hidden">
+                    <div class="grid grid-cols-[120px_auto]">
+                        <div>signature:</div>
+                        <div class="font-bold">form_grabber_with_jsencrypter_ea9bc</div>
+                        <div>in file:</div>
+                        <div>/data/web/magento2/js/mage/require.js</div>
+                        <div>triggered by:</div>
+                        <div>JSEncrypt();_0x</div>
+                        <div>created:</div>
+                        <div>2020-03-12 20:56:23</div>
+                        <div>modified:</div>
+                        <div>2020-03-31 21:59:31</div>
+                    </div>
+                </div>
+
+                <div class="w-full text-sm border border-solid border-slate-200 text-slate-600 py-3 px-4  rounded-md">Analysis successful. 10862 code/executable files were  checked against 50k+ threat signatures.</div>
+
+            </div>
+            
+           
+
+        </div>
+
+        <div class="flex flex-col lg:w-1/2 gap-6"> <!-- right cell -->
+
+            <div class="flex flex-col bg-white w-full p-6  gap-4 rounded-md shadow-md">
+
+                <h3 class="text-sm uppercase font-bold text-gray-500 tracking-widest mb-1">exposed database managers scan</h3>
+
+                <div class="w-full text-md bg-red-50 text-red-500 font-bold py-3 px-4 font-mono rounded-md">1 vulnerability identified</div>
+
+                <div class="w-full border-l-4 border-red-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono text-sm rounded-r-md overflow-hidden">
+                    <div class="grid grid-cols-[120px_auto]">
+                        <div>signature:</div>
+                            <div class="font-bold">adminer database manager</div>
+                        <div>in file:</div>
+                            <div>/data/web/magento2/willem/a.php</div>
+                        <div>triggered by:</div>
+                            <div>@link https://www.adminer.org</div>
+                        <div>created:</div>
+                            <div>2020-03-12 20:56:23</div>
+                        <div>modified:</div>
+                            <div>2020-03-31 21:59:31</div>
+                    </div>
+                </div>
+
+                <div class="w-full text-sm border border-solid border-slate-200 text-slate-600 py-3 px-4  rounded-md">
+                    
+                    Analysis successful. All database managers on production systems were scanned for known malware & vulnerabilities.
+                
+                </div>
+
+            </div>
+
+            <div class="flex flex-col bg-white w-full p-6  gap-4 rounded-md shadow-md">
+
+                <h3 class="text-sm uppercase font-bold text-gray-500 tracking-widest mb-1">core platform security check</h3>
+
+                <div class="w-full text-md bg-green-50 text-green-500 font-bold py-3 px-4 font-mono rounded-md">No vulnerabilities identified</div>
+
+                <div class="w-full text-sm border border-solid border-slate-200 text-slate-600 py-3 px-4  rounded-md">
+                    
+                    Analysis successful. No missing patches for security issues of the core platform were found.
+                
+                </div>
+
+            </div>
+
+            <div class="flex flex-col bg-white w-full p-6  gap-4 rounded-md shadow-md">
+
+                <h3 class="text-sm uppercase font-bold text-gray-500 tracking-widest mb-1">magento 1 database scan</h3>
+
+                <div class="w-full text-md bg-red-50 text-red-500 font-bold py-3 px-4 font-mono rounded-md">1 vulnerability identified</div>
+
+                <div class="w-full border-l-4 border-red-500 bg-slate-50 text-slate-800 py-3 px-4 font-mono text-sm rounded-r-md overflow-hidden">
+                    <div class="grid grid-cols-[120px_auto]">
+                        <div>signature:</div>
+                            <div class="font-bold">adminer database manager</div>
+                        <div>in file:</div>
+                            <div>/data/web/magento2/willem/a.php</div>
+                        <div>triggered by:</div>
+                            <div>@link https://www.adminer.org</div>
+                        <div>created:</div>
+                            <div>2020-03-12 20:56:23</div>
+                        <div>modified:</div>
+                            <div>2020-03-31 21:59:31</div>
+                    </div>
+                </div>
+
+                <div class="w-full text-sm border border-solid border-slate-200 text-slate-600 py-3 px-4  rounded-md">
+                    
+                    Analysis successful. 155 rows in 6 tables were scanned, using the db from /data/web/magento2/app/etc/local.xml
+                
+                </div>
+
+            </div>
+
+        </div>
+            
+    </main>
+    
+</body>
+</html>
