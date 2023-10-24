@@ -1,3 +1,0 @@
-# wearebob.github.io
-
-Hello!
